@@ -6,7 +6,7 @@
 /*   By: mojacque <mojacque@student.le-101.fr>      +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2019/12/02 21:49:09 by mojacque     #+#   ##    ##    #+#       */
-/*   Updated: 2019/12/19 16:43:41 by mojacque    ###    #+. /#+    ###.fr     */
+/*   Updated: 2019/12/20 17:19:28 by mojacque    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -79,5 +79,6 @@ int				get_next_line(int fd, char **line)
 	if ((ft_save(lines, &a) != NULL) && a == 1)
 		return (1);
 	free(lines);
+	lines = NULL;
 	return (0);
 }

@@ -6,7 +6,7 @@
 /*   By: mojacque <mojacque@student.le-101.fr>      +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2019/12/02 21:48:57 by mojacque     #+#   ##    ##    #+#       */
-/*   Updated: 2019/12/19 17:50:19 by mojacque    ###    #+. /#+    ###.fr     */
+/*   Updated: 2019/12/20 14:55:37 by mojacque    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -25,6 +25,8 @@ char			*ft_alloc(size_t size);
 char			*ft_substr(char const *s, unsigned int start, size_t len);
 char			*ft_strcpy(char *dest, char *src);
 
-# define BUFFER_SIZE 2
+# ifndef BUFFER_SIZE
+#  define BUFFER_SIZE 2
+# endif
 
 #endif
